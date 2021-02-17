@@ -1,0 +1,7 @@
+{
+    "board@Adafruit AVR Boards": "Adafruit Flora", 
+    "package": "adafruit", 
+    "platform": "Adafruit AVR Boards", 
+    "programmer": "AVR ISP", 
+    "version": "1.4.13"
+}

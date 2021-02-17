@@ -21,7 +21,7 @@ void resetStrip(void);
 
 void setup()
 {
-	
+	resetStrip();
 }
 
 void loop()
@@ -40,4 +40,3 @@ void resetStrip()
 		FastLED.show();
 }
 
-terriblesyntaxerror
