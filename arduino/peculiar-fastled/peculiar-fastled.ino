@@ -15,9 +15,20 @@ CRGB leds[NUM_LEDS];
 void resetStrip(void);
 
 
+// declare variables in scope
+
+SpriteManager *spriteManager;
+
+bool isBooted;
+bool testSpritesCreated;
+int starttime = millis();
+
 
 void setup()
 {
+	// Initialize the SpriteManager object
+	spriteManager = new SpriteManager();
+	// Set up the led strip and paint it black.
 	resetStrip();
 }
 
