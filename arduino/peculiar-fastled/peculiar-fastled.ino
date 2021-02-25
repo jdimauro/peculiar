@@ -6,14 +6,14 @@
 #include <FastLED.h>
 
 // Load initial globals and initialize FastLED:
-#include <config.h>
+#include "config.h"
 CRGB leds[NUM_LEDS];					// leds is the virtual representation of the LED strip
 
 // Internal Stuff:
-#include <Sprite.h>
-#include <SpriteVector.h>
-#include <SpriteManager.h>
-#include <onePixelSprite.h>
+#include "Sprite.h"
+#include "SpriteVector.h"
+#include "SpriteManager.h"
+#include "onePixelSprite.h"
 
 #ifndef PSTR
 #define PSTR // Make Arduino Due happy

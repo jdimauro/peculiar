@@ -1,6 +1,6 @@
 // FastLED constants
 #define NUM_LEDS							300 						// 300 per 5-meter strip at 60 pixels/meter, 150 per 5-meter strip at 30/meter 
-#define NEOPIXEL_DATA_PIN			6								// Pin for neopixels
+#define NEOPIXEL_DATA_PIN			12							// Pin for neopixels: 6 on Flora. 12 for wireless stick?
 
 // SpriteManager / SpriteVector config
 #define MAXSPRITES						6								// Maximum total of Sprites allowed at once.
