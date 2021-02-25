@@ -12,7 +12,7 @@
 #define NUM_LEDS							300 // 300 per 5-meter strip at 60 pixels/meter 
 #define NEOPIXEL_DATA_PIN			6								// Pin for neopixels
 
-// CRGB leds[NUM_LEDS];
+CRGB leds[NUM_LEDS];
 
 // Function prototypes:
 void resetStrip(void);
@@ -21,7 +21,7 @@ void resetStrip(void);
 
 void setup()
 {
-	
+	resetStrip();
 }
 
 void loop()
@@ -40,4 +40,3 @@ void resetStrip()
 		FastLED.show();
 }
 
-terriblesyntaxerror
