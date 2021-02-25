@@ -3,7 +3,7 @@
 
 #include <FastLED.h>
 #include <config.h>
-
+#include <SpriteManager.h>
 
 #ifndef PSTR
 #define PSTR // Make Arduino Due happy

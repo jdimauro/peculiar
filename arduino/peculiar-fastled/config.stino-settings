@@ -1,7 +1,8 @@
 {
     "board@Adafruit AVR Boards": "Adafruit Flora", 
-    "package": "adafruit", 
-    "platform": "Adafruit AVR Boards", 
+    "board@arduino": "Arduino Uno", 
+    "package": "Arduino IDE", 
+    "platform": "arduino", 
     "programmer": "AVR ISP", 
-    "version": "1.4.13"
+    "version": "avr"
 }
