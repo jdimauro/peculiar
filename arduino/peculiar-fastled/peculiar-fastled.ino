@@ -1,8 +1,14 @@
 // The Witch's Peculiar
 // Being a Witch Lights sprite animation that plays on a shorter, denser pixel strip as part of a wearable garment.
 
+
+// Libraries
 #include <FastLED.h>
+
+// Internal Stuff
 #include <config.h>
+#include <Sprite.h>
+#include <SpriteVector.h>
 #include <SpriteManager.h>
 
 #ifndef PSTR

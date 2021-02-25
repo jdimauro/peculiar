@@ -1,5 +1,3 @@
-#include <SpriteVector.h>
-
 class SpriteManager {
 	private:
 		boolean updatedSomething = false;
