@@ -4,10 +4,12 @@
 
 // Libraries
 #include <FastLED.h>
+
+// Load initial globals and initialize FastLED:
 #include <config.h>
 CRGB leds[NUM_LEDS];					// leds is the virtual representation of the LED strip
 
-// Internal Stuff
+// Internal Stuff:
 #include <Sprite.h>
 #include <SpriteVector.h>
 #include <SpriteManager.h>
@@ -43,12 +45,12 @@ void loop()
 {
 	if (! isBooted) {
 		if (! testSpritesCreated) {
-			spriteManager->Add(new W1V1Sprite(10, 0x750787));
-			spriteManager->Add(new W1V1Sprite( 8, 0x004dff));
-			spriteManager->Add(new W1V1Sprite( 6, 0x008026));
-			spriteManager->Add(new W1V1Sprite( 4, 0xffed00));
-			spriteManager->Add(new W1V1Sprite( 2, 0xff8c00));
-			spriteManager->Add(new W1V1Sprite( 0, 0xe40303));
+			spriteManager->Add(new onePixelSprite(10, 0x750787));
+			spriteManager->Add(new onePixelSprite( 8, 0x004dff));
+			spriteManager->Add(new onePixelSprite( 6, 0x008026));
+			spriteManager->Add(new onePixelSprite( 4, 0xffed00));
+			spriteManager->Add(new onePixelSprite( 2, 0xff8c00));
+			spriteManager->Add(new onePixelSprite( 0, 0xe40303));
 
 			testSpritesCreated = true;
 		}
