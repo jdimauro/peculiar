@@ -46,4 +46,8 @@ class onePixelSprite : public Sprite {
 
 			return false;
 		}
+
+		void MarkDone() {
+			// this should have inherited from the Sprite class right???
+		}
 };

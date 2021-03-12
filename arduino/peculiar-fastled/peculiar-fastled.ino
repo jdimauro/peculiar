@@ -10,10 +10,11 @@
 CRGB leds[NUM_LEDS];					// leds is the virtual representation of the LED strip
 
 // Internal Stuff:
-#include "Sprite.h"
-#include "SpriteVector.h"
-#include "SpriteManager.h"
-#include "onePixelSprite.h"
+// Todo: 
+#include "Sprite.cpp"
+#include "SpriteVector.cpp"
+#include "SpriteManager.cpp"
+#include "onePixelSprite.cpp"
 
 #ifndef PSTR
 #define PSTR // Make Arduino Due happy
@@ -28,7 +29,7 @@ void resetStrip(void);
 SpriteManager *spriteManager;	// spriteManager is the little engine at the heart of the state machine loop
 
 // Declare global variables:
-bool isBooted = false;								// when true, we've done a system self-test; this and the next could probably be put someplace better than a global, huh?
+bool isBooted = false;				// when true, we've done a system self-test; this and the next could probably be put someplace better than a global, huh?
 bool testSpritesCreated = false;			
 int starttime = millis();			// start the relative clock; probably something we could handle better?
 

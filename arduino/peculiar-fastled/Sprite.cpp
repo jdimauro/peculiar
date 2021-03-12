@@ -14,7 +14,7 @@ class Sprite {
 				return true;		// Always true, no reason to veto this one.
 		}
 
-		boolean UpdateNow() {
+		bool UpdateNow() {
 			if (millis() - lastUpdateTime >= updateInterval) {
 				lastUpdateTime = millis();
 				return true;
